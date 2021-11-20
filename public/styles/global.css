@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+html{
+    
+    --black: #0d114f;
+    --white: #fafafa; 
+    --roxo:   #6818cf;
+    --red: #e72121;
+    --blue:  #3485ff;
+    --background:  #bcbcc0;
+    --overlay:  #0c155e;
+    --icons-details:  #242935;
+
+    --grey-dark:    #4d5e77;
+    --grey-blue:    #e1e5ec;
+    --grey-light:   #e5eaf1;
+    --home:         #eaecf2;
+    --purple: rgb(74, 21, 128);
+
+    
+
+}
+
+
+body{
+    background: #ffffff;
+
+}
+body:after{
+    content: "";
+    position: absolute;
+    background: #04040f;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 29rem;
+    
+    z-index: -1;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+
+
+}
+
+
+
+.page-main header nav{
+    width: 90%;
+    max-width: 1100px ;
+    margin: 30px auto 50px auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+
+}
+
+.page-main header .gear img{
+    width:40px;
+    height:40px;
+}
+
+.page-main header  #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-main header  #search input{
+        z-index: 0;
+        padding: 10px  60px;
+        
+        
+        outline: none;
+         margin-right: -40px;
+         border-radius: 50px;
+            background: #0b1529;
+            color: #fff;
+       
+}
+.page-main header  #search button{
+    z-index: 50;
+    width: 40px;
+    height: 36.2px;
+    background: transparent;
+    
+    border-radius: 0 8px 8px 0;
+    right: 40px;
+    cursor: pointer;
+    
+    
+    
+    
+}
+
+.page-main header form .magnifier{
+   
+   
+   position: relative;
+    right: 32px;
+    
+   
+}
+
+
+.line{
+    
+    margin:  20px auto 30px auto;
+}
+.line hr{
+   
+   border: 0;
+   height: 2px;
+  background-image: linear-gradient(to right, transparent, var(--white), transparent); 
+}
+.page-main .menu{
+    margin-right: 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 4.6rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+ul li a{
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    padding: .5rem;
+}
+#btn-mobile{
+    display: none;
+}
+#btn-register{
+    display: none;
+}
+
+
+.arrows{
+  
+    
+     margin-top: -35rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+       
+}
+
+.arrows .arrow{
+  
+  z-index: 10;
+   
+}
+
+.slider{
+    top: -20px;
+}
+.slider img{
+   
+    border: 0;
+    margin-bottom: 30px;
+    object-fit: cover;
+    max-height: 40rem;
+    
+}
+
+
+
+
+
+h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+    color: var(--white);
+}
+
+.page-main header p{
+
+    font-family: Nunito, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+
+form input[type='file']{
+    display: none;
+}
+
+ /* confiracao de imagens da pagaina watchs*/
+.slider-watch img{
+   max-width: 70%;
+   min-width: 100%;
+   object-fit: cover;
+   height: 80%;
+
+ }
+
+.separator{
+    display: flex;
+    align-items: center;
+}
+ .separator h2{
+     font-family: Roboto, sans-serif;
+     margin: 50px auto;
+     text-align: center;
+     padding: 0 2rem;
+     font-size: 35px;
+ }
+ .separator hr {
+    border: 0;
+    
+   background-image: linear-gradient(to left, transparent, var(--icons-details), transparent);
+     width: 70%;
+     height: 2px;
+
+ }
+
+ .whatsApp a{
+     right: 0;
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     bottom: 30px;
+     right: 35px;
+     background-color:#25d366;
+     color: #ffffff;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 1px 1px 2px #888;
+     z-index: 50;
+ }
+.fa-whatsapp{
+     margin-top: 11px
+ }

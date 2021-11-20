@@ -1,0 +1,183 @@
+
+.page-main header a{
+
+   font-family: Ubuntu, sans-serif; 
+   
+   color: var(--white);
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   
+}
+.page-main header span{
+    margin-right: 16px;
+    background-image: url(../image/arrow-left.svg);
+  
+    display: flex;
+  
+    width: 20px;    
+    height: 24px;
+}
+.registration-watch.active{
+    opacity: 1;
+    visibility: visible;
+}
+.registration-watch{
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.registration-watch form{
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+   ;
+    box-shadow: 1px 1px 5px var(--icons-details);
+    
+    max-width: 60rem;
+    
+   
+    margin: 190px auto 100px auto;
+}
+
+.registration-watch form h1{
+    font-size: 36px;
+    color: var(--purple);
+    
+
+
+}
+
+.registration-watch form fieldset{
+    margin-top:64px;
+    border: 0;
+
+}
+
+.registration-watch form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+    
+}
+
+form .watchs{
+    margin: 10px auto 90px auto;
+}
+
+form .watchs label{
+    
+  
+   padding: 10% 49.5%;
+   border-radius: 8px;
+   border: dashed 2px var(--purple);
+    
+}
+
+form .watchs img{
+ z-index: 10;  
+ display: flex;
+ margin: -20px auto;
+ width: 30px;
+ height: 30px;
+ 
+}
+
+form input,
+form textarea{
+    background: var(--grey-blue);
+    border: 0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    outline: none;
+    
+    padding: 5px;
+    width: -moz-fit-content;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+    
+}
+
+
+
+form .field label{
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+
+form button{
+    width: 260px;
+    height: 56px;
+  
+    background-color: var(--grey-dark);
+    border-radius: 8px;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  
+    border: 0;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 400ms;
+  
+  
+}
+
+form button:hover{
+    background: var(--icons-details)  
+}
+
+@media  (max-width: 660px){
+    .registration-watch form{
+        margin: 150px 30px auto 30px;
+
+    
+    }
+    .registration-watch form h1{
+
+        text-align: center;
+    }
+    .registration-watch form button{
+
+            
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+@media  (max-width: 375px){
+
+    .registration-watch form h1{
+
+        text-align: center;
+    }
+
+    .registration-watch form{
+        margin: 150px 30px auto 30px;
+
+    
+    }
+    
+    
+    .registration-watch form button{
+
+            
+        align-items: center;
+        width: 100%;
+    }
+
+} 
+

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+    {% block title %}
+    <title>Home-page</title>
+    {% endblock title %}
+
+</head>
+<body>
+<div class="page-main">
+<header>
+    <nav>
+    
+    <div class="logo">
+    
+    <a href="/">
+    <h1>Store</h1>
+    </a>
+    
+    </div>
+
+    <div class="mobile-menu">
+        <div class='line1'></div>
+        <div class='line2'></div>
+        <div class='line3'></div>
+    </div>
+    <form action="" id="search">
+        
+        <input type="text" name="search" class="search">
+        <button type="submit" class="search">
+        </button>
+         <img class="magnifier" src="image/search-white.svg" alt="search">
+        
+    </form>
+
+
+</header>
+    <nav id="nav">
+        <button id="btn-mobile">Menu
+            <span id="hamburger"></span>
+        </button>
+                    <ul id="menu">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/watchs">Relogio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wallets">Carteira</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/perfumes">Perfume</a></li>
+                    </ul>
+                
+      </nav>          
+    
+
+    <div class="whatsApp">
+        <a href="https://web.whatsapp.com/send?phone=558699520517" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+        </a>
+   </div>
+
+    {% block sliderWatch %}
+    {% endblock sliderWatch %}
+
+    {% block titlePageWatch %}
+    {% endblock titlePageWatch %}
+  
+    {% block slider %}
+    {% endblock slider %}
+  
+    {% block watchs %}
+    {% endblock watchs %}
+
+    {% block wallets %}
+    {% endblock wallets %}
+
+    {% block perfumes %}
+    {% endblock perfumes %}
+ 
+</div>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/mobile-navbar.js" defer type="module"></script>   
+<script src="scripts/main.js" defer type="module"></script>
+</body>
+</html>

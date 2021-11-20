@@ -1,0 +1,152 @@
+.registration-perfume.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.registration-perfume{
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.registration-perfume form{
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 1px 1px 5px var(--icons-details);
+    
+    max-width: 600px;
+   
+    margin: -689.5px auto 100px auto ;
+}
+
+
+.registration-perfume form fieldset{
+    margin-top:64px;
+    border: 0;
+    
+}
+
+.registration-perfume form h1{
+    font-size: 36px;
+    color: var(--purple);
+    
+
+
+}
+
+form .perfumes{
+    margin: 10px auto 90px auto;
+}
+
+form .perfumes label{
+    
+    padding: 10% 49.5%;
+    border-radius: 8px;
+    border: dashed 2px var(--purple);
+    
+}
+
+form .perfumes img{
+ z-index: 10;  
+ display: flex;
+ margin: -20px auto;
+ width: 30px;
+ height: 30px;
+ 
+}
+.registration-perfume form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+form input,
+form textarea{
+    background: var(--grey-blue);
+    border: 0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+
+
+
+form .field label{
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+
+form button{
+    width: 260px;
+    height: 56px;
+  
+    background-color: var(--grey-dark);
+    border-radius: 8px;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  
+    border: 0;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 400ms;
+  
+  
+}
+
+form button:hover{
+    background: var(--icons-details)  
+}
+
+@media only screen and (max-width: 660px){
+
+    .registration-perfume form h1{
+
+        text-align: center;
+    }
+
+    .registration-perfume form{
+       
+        margin: -689.5px 30px 100px 30px ;
+
+    }    
+    .registration-perfume form button{
+
+            
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    .registration-perfume form{
+        margin: -689.5px 30px 100px 30px ;
+
+    }
+   
+    form .perfumes label{
+    
+        padding: 10% 45.5%;
+        border-radius: 8px;
+        border: dashed 2px var(--purple);
+        
+    }
+
+}

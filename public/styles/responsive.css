@@ -1,0 +1,336 @@
+/*Configurando responsividade da home*/
+
+
+body{
+    overflow-x:none;
+}
+
+
+@media (max-width: 890px){
+
+  
+
+.page-main header nav .logo h1{
+    
+    
+    margin-top: -10px;
+    margin-bottom:86px;
+    
+        
+    }
+
+    
+    
+    
+        .page-main header form img{
+            right: 20px;
+           
+        }
+
+
+
+    }
+
+
+
+@media (max-width: 890px){
+        body{
+            overflow-x: hidden;
+        }
+        .line{
+            display: none;
+        }
+        .slider img{
+            object-fit: cover;
+        }
+        .page-main header form {
+           
+            position: absolute;
+            
+            
+        }
+        
+        .page-main header  #search button{
+            z-index: 50;
+            width: 40px;
+            height: 36.2px;
+           
+        }
+        
+        
+         #menu{
+            display: block;
+            position: absolute;
+            width: 50%;
+            top: 80px;
+            left: 0;
+            background: #04040f;
+            display: block;
+            height: 0px;
+            transition: .4s;
+            z-index: 1000;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+        #nav.active #menu{
+            visibility: visible;
+            height: calc(100vh);
+            overflow-y: auto;
+
+        }
+        #menu a {
+            font-size: medium;
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid #5a5858;
+        }
+        #btn-mobile{
+            
+          
+            margin: -175px auto 150px 83%;
+           
+            align-items: center;
+            justify-content: end;
+            
+            display: flex;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: .5rem 1rem;
+            font-size: 1.9rem;
+           
+            color: white;
+            background:transparent;
+            font-family: Ubuntu, sans-serif ;
+            cursor: pointer;
+            gap: .6rem;
+            
+            
+        }
+        
+        #btn-register{
+            
+            margin:  -9.2rem    40% auto 80%;
+           
+           display: flex;
+            align-items: center;
+            justify-content: end;
+            
+            position: relative;
+            
+            padding: .5rem 1rem;
+            font-size: 1.9rem;
+           
+            color: white;
+            background: black;
+            font-family: Ubuntu, sans-serif ;
+            cursor: pointer;
+            gap: .6rem;
+            
+           
+           
+        }
+
+
+
+        #hamburger{
+            display: block;
+            border-top:2px solid ;
+            width: 20px;
+            color: white;
+
+        }
+        #hamburger::after,#hamburger::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+            transition: .3s;
+            position: relative;
+        }
+        #nav.active #hamburger{
+           border-top-color: transparent ;
+        }
+        #nav.active  #hamburger::before{
+            transform: rotate(135deg);
+        }
+        #nav.active  #hamburger::after{
+            transform: rotate(-135deg);
+            top: -7px;
+
+        }
+
+        .page-main header  #search{
+            margin-top: 60px;
+         
+           right: 30vw;
+          left: 30vw;
+        }
+
+        
+    }
+    @media (max-width: 766px){
+        
+        #btn-mobile{
+            
+          
+            margin: -175px auto 150px 79%;
+        }
+        
+        #btn-register{
+            
+            margin:  -9.2rem    40% auto 75%;
+        }
+        
+        
+        .page-main header  #search button{
+
+            position: absolute;
+            left:35vw;
+        }
+        .page-main header form img{
+           left: 10px;
+           
+        }
+
+        .card {
+            width: calc(100%/2 - 20px);
+        }
+        .card .card-img {
+            height: calc((100vw /2 - 20px) /2);
+        }
+
+    }
+
+
+
+
+    @media (max-width: 710px ){
+        .logo h1{
+            font-size: 40px;
+        } 
+        #btn-mobile{
+            
+          
+            margin: -175px auto 150px 76%;
+        }
+    }
+
+
+
+
+    @media (max-width: 425px ){
+        #menu{
+            width: 100%;
+        }
+        
+        .logo h1{
+            font-size: 30px;
+        }
+        #btn-mobile{
+            
+          
+            margin: -166px auto 150px 70%;
+        }
+        
+        
+        #btn-register{
+            
+            margin:  -9.2rem    40% auto 75%;
+        }
+        
+        .card {
+            width: calc(100% - 20px);
+        }
+        .card .card-img {
+            height: calc((100vw - 20px) /2);
+        }
+
+
+    }
+
+
+
+
+
+    @media (max-width: 375px){
+        
+        .logo h1{
+            font-size: 25px;
+        }
+        #btn-mobile{
+            
+         position: absolute;
+            right: 15px;
+            margin-top: 10rem;    
+        }
+        .separator h2{
+            font-size: 28px;
+         }
+        #btn-register{
+            
+            margin:  -8rem    40% auto 68%;
+        }
+
+
+        #btn-mobile{
+            margin: -168px auto 135px auto;
+        }
+
+
+        .page-main header  #search{
+          margin-top: 60px;
+            
+            
+            
+        }
+        .page-main header  #search input{
+            padding: 15px 70px;
+            margin-right: -20px;
+            width: 100vw;
+            top: 52px;
+            border-radius: 50px;
+            
+           
+        }
+        .page-main header  #search button{
+            left:49vw;
+            border-radius: 50px
+            
+            
+        }
+        .page-main header  #search img{
+            left: -13px;
+        }
+        
+
+
+        
+        .page-main header form img{
+            left: -55px;
+           
+        }
+        .slider-watch img{
+           
+            object-fit: cover;
+            height: 115px;
+         
+          }
+        
+        
+    }
+    @media (max-width: 320px){
+        .cards{
+            margin: 0 20px;
+        }
+        .card {
+            width: calc(100%);
+            margin: 10px 0;
+        }
+       .card .card-img {
+            height: calc(100vw/3);
+        }
+    }
+    
+    

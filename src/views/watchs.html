@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+
+
+
+
+    
+
+
+    
+{% block sliderWatch %}
+    <div class="slider-watch">
+        <img src="image/banner.png" alt="slider-watch">
+    </div>
+{% endblock sliderWatch %}
+   
+{% block titlePageWatch %}
+    <div class="separator">
+    <hr>
+    <h2>Relógios</h2>
+    <hr>
+    </div>
+{% endblock titlePageWatch %}
+    
+
+   {% block watchs %}
+<div class="cards">
+
+    {% for  watch in watchs %}
+    <div class="card">
+        <div class="card-img">
+        <img src="{{watch.image}}" alt="{{watch.image}}">
+        </div>
+        <p>{{watch.name}}</p>
+        <h2>R${{watch.price}}</h2>
+         <a href="">Vendendor</a>   
+    </div>
+
+    {% endfor %}
+
+    
+</div>
+   {% endblock watchs %}
+ 

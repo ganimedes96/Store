@@ -1,0 +1,107 @@
+{% extends 'registration.html' %}
+
+
+{%block formWatch  %}
+<div id="nav"> 
+       <button id="btn-register">Menu
+            <span id="hamburger"></span>
+        </button>
+
+        <ul  id="menu">
+            
+            <li> <a href="#" class="lista" id="watch">Relogio</a></li>
+            <li><a href="#"class="lista" id="wallet" >Carteira</a></li>
+            <li><a href="#" class="lista" id="perfume">Perfurme</a></li>
+        </ul>
+</div>
+<div id="registration-watch" class="registration-watch active">
+        <form id="formWatch" action="/savewatchs" method="POST" enctype="multipart/form-data">
+            <h1>Relogio</h1>
+            <fieldset>
+                <div class="watchs">
+                    <label for="watchs"></label>
+                    <input type="file" name="watchs" id="watchs">
+                    <img src="image/add.svg" alt="file">
+                </div>
+        
+            <div class="field">
+                <label  for="name"></label>
+                <textarea name="name" id="name" rows="5" cols="10"  wrap="hard" required
+                maxlength="100" placeholder="Nome/Descricao"  ></textarea>
+            </div>
+            
+
+            <div class="field">
+                <label class="sr-only" for="price">R$</label>
+                <input type="number" id="price" name="price" class="price" placeholder="R$" required/>
+
+            </div>
+        
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+{%endblock formWatch %}
+
+
+{% block fromWallet %}
+<div class="registration-wallet  " id="registration-wallet">
+        <form action="/savewallets" method="POST" enctype="multipart/form-data" >
+            <h1>Carteira</h1>
+            <fieldset>
+                <div class="wallets">
+                    <label for="wallets"></label>
+                    <input type="file" class="wallets" name="wallets" id="wallets">
+                    <img src="image/add.svg" alt="file">
+                </div>
+        
+            <div class="field">
+                <label  for="name"></label>
+                <textarea name="name" id="name"  cols="30" rows="5" required 
+                maxlength="100" placeholder="Nome/Descricao"></textarea>
+            </div>
+            
+
+            <div class="field">
+                <label class="sr-only" for="price">R$</label>
+                <input type="number" id="price" name="price" class="price" placeholder="R$" required/>
+
+            </div>
+        
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+{% endblock fromWallet %}
+
+{% block formPerfume %}
+<div class="registration-perfume" id="registration-perfume">
+        <form action="/saveperfumes" method="POST"  enctype="multipart/form-data">
+            <h1>Perfume</h1>
+            <fieldset>
+        
+                <div class="perfumes">
+                    <label for="perfumes"></label>
+                    <input type="file" class="perfumes" name="perfumes" id="perfumes">
+                    <img src="image/add.svg" alt="file">
+                </div>
+
+            <div class="field">
+                <label  for="name"></label>
+                <textarea name="name" id="name"  cols="30" rows="5" required 
+                maxlength="100" placeholder="Nome/Descricao"></textarea>
+            </div>
+            
+
+            <div class="field">
+                <label class="sr-only" for="price">R$</label>
+                <input type="number" id="price" name="price" class="price" placeholder="R$" required/>
+
+            </div>
+        
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+{% endblock formPerfume %}
+     

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+
+
+
+{% block perfumes %}
+<div class="cards">
+
+    {% for  perfume   in perfumes %}
+    <div class="card">
+        <img src="{{perfume.image}}" alt="{{perfume.image}}">
+        <p>{{perfume.name}}</p>
+        <h2>R${{perfume.price}}</h2>
+         <a href="">Comprar agora</a>   
+    </div>
+
+    {% endfor %}
+
+    
+</div>
+   {% endblock perfumes %}

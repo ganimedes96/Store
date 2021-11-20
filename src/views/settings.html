@@ -1,0 +1,43 @@
+{% extends 'registration.html' %}
+
+{% block watchs %}
+<div class="delCards">
+
+    {% for watch in watchs %}
+    <div class="card">
+        <div class="card-img">
+        <img src="{{watch.image}}" alt="{{watch.image}}">
+        </div>
+        
+        <h2>R${{watch.price}}</h2>
+    
+        {% block modal %}
+
+            <div class="modal-wrapper">
+                <div class="modal">
+                    <h2>Excluir card</h2>
+                    <p>Tem certeza que deseja excluir esse card?</p>
+                    <form action="/del-cards" method="POST">
+                        <div class='buttons'>
+                            <div class='button cancel'>Cancelar</div>
+                        <button type='submit' class='del'>Sim, excluir</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        {% endblock modal %}
+
+
+         <button id='delete' class='delete'>
+             <img src="image/bin.svg" alt="">
+         </button>
+         
+    </div>
+
+    {% endfor %}
+
+    
+</div>
+   {% endblock watchs %}
+ 

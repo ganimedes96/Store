@@ -1,0 +1,164 @@
+
+.registration-wallet.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.registration-wallet{
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.registration-wallet form{
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 1px 1px 5px var(--icons-details);
+    
+    max-width:60rem;
+   
+    margin: -68.9rem auto 100px auto ;
+
+
+   
+}
+
+
+.registration-wallet form fieldset{
+    margin-top:64px;
+    border: 0;
+    
+}
+
+.registration-wallet form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.registration-wallet form h1{
+    font-size: 36px;
+    color: var(--purple);
+    
+}
+form .wallets{
+    margin: 10px auto 90px auto;
+}
+
+form .wallets label{
+    
+    padding: 10% 49.5%;
+   border-radius: 8px;
+   border: dashed 2px var(--purple);
+    
+}
+
+form .wallets img{
+ z-index: 10;  
+ display: flex;
+ margin: -20px auto;
+ width: 30px;
+ height: 30px;
+ 
+}
+
+form input,
+form textarea{
+    background: var(--grey-blue);
+    border: 0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    outline: none;
+    
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+
+form .field-group{
+
+    display: flex;
+
+}
+
+form .field label{
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+form button{
+    width: 260px;
+    height: 56px;
+  
+    background-color: var(--grey-dark);
+    border-radius: 8px;
+  
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  
+    border: 0;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 400ms;
+  
+  
+}
+
+form button:hover{
+    background: var(--icons-details)  
+}
+
+
+
+
+
+@media (max-width:660px){
+    .registration-wallet form{
+        margin: -58.9rem 30px 100px 30px ;
+    }
+    
+    .registration-wallet form h1{
+
+        text-align: center;
+    }
+    form input,
+form textarea{
+    width: 100%;
+}
+    .registration-wallet form button{
+
+        width: 100%;
+    }
+
+}
+@media  (max-width: 375px){
+    .registration-wallet form{
+        margin: -68.9rem 30px 100px 30px ;
+    }
+   
+   
+    form input,
+form textarea{
+    width: 100%;
+}
+    .registration-wallet form button{
+
+            
+        
+        width: 100%;
+    }
+    
+
+}

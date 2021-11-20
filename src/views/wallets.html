@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+
+
+
+ {% block wallets %}
+<div class="cards">
+
+    {% for  wallet in wallets  %}
+        <div class="card">
+            <div class="card-img">
+                <img src="{{wallet.image}}" alt="{{wallet.image}}">
+            </div>
+            <p>{{wallet.name}}</p>
+            <h2>R${{wallet.price}}</h2>
+            <a href="">Comprar agora</a>   
+        </div>
+
+    {% endfor %}
+
+    
+</div>
+   {% endblock wallets %}
+ 
