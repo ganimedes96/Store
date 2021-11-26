@@ -15,9 +15,7 @@
 
 <br>
 
-<p align="center">
-  <img alt="Ecoleta" src="ecoleta.png" width="100%">
-</p>
+
 
 ## 🚀 Tecnologias
 
@@ -27,3 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Express](https://expressjs.com/pt-br/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
+
+## 💻 Projeto
+
+O Ecoleta é um marketplace que ajuda pessoas compatilhar seus produtos na internet
