@@ -1,14 +1,9 @@
 # Store
 
 
-
-<h1 align="center">
-    <img alt="Store" title="Store"  />
-</h1>
-
 <p align="center">
   <a href="">
-    <img src="./store.gif" width="800">
+    <img src="store.gif" width="800">
   </a>
 </p>
 
