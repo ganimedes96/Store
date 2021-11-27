@@ -30,4 +30,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Ecoleta é um marketplace que ajuda pessoas compatilhar seus produtos na internet
+ marketplace que ajuda pessoas compatilhar seus produtos na internet
