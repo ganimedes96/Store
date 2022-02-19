@@ -1,5 +1,5 @@
 # Store
-##
+
 <p>Projeto em andamento</p>
 ##
 
@@ -9,11 +9,6 @@
   </a>
 </p>
 
-<p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="">
-</p>
 
 <br>
 
